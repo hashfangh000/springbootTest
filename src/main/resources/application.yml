@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: root
+    password: 654321
+    url: jdbc:mysql://localhost:3306/springdb?useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    filters: stat
+  thymeleaf:
+    cache: false
+mybatis:
+  type-aliases-package: com.example.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml
